@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Seteo general */
+
+body {
+    background-image: url("../img/fondo-prisma.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Formulario */
+
+.container {
+    margin: 5rem 0;
+}
+
+.container .form .form-header .form-title {
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(255, 80, 27);
+    text-align: center;
+    padding: 14px 0;
+    margin: 1.5rem;
+    line-height: 1.5rem;    ;
+}
+
+.container .form .form-header .form-text {
+    color: rgb(255, 80, 27);
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.container .form {
+    background: rgba(71, 70, 70, 0.6);
+    box-shadow: 0 0 20px rgba(238, 69, 18, 0.83);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.container .form .form-label {
+    display: block;
+    color: rgb(255, 80, 27);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    text-align: left;
+}
+
+.container .form .form-input, .form-textarea {
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 80, 27);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.container .form .btn-submit {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 80, 27);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.container .form .btn-submit:hover {
+    background: rgb(255, 118, 27);
+}
+
+/* Fin Formulario */
+
+/* Inicio Grid */
+
+.grid-container {
+    display: grid;
+    grid-template: 45vh/ repeat(3, 0.33fr);
+    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3rem;
+}
+
+.grid-items {
+    border: 3px solid rgb(255, 80, 27);
+    border-radius: 0.5rem;
+    background-color: rgba(10, 10, 10, 0.522);
+    color: rgb(255, 80, 27);
+    display: grid;
+    grid-template-rows: 1rem, 0.5rem;
+    padding: 1rem;
+}
+
+.grid-items:hover {
+    box-shadow:  0 0 20px rgba(238, 69, 18, 0.90);
+    transition: all 0.5s ease-in-out;
+}
+
+span {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.section-suc {
+    background-color: rgba(10, 10, 10, 0.522);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+}
+
+.sucursales  {
+    margin: 2rem 0;
+    padding: 1rem;
+    color: rgb(255, 80, 27);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.suc-text{
+    margin: 2rem 0;
+    padding: 1rem;
+    color: rgb(255, 80, 27);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.maps {
+    border-radius: 1.5rem;
+    border-style: none;
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.footer-contact {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+/* Fin Grid */

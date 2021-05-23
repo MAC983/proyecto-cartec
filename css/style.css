@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+/* Seteo general */
+
+body, html {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    line-height: 180%;
+    color: #444;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 1rem;
+}
+
+section {
+    padding: 50px 80px;
+    width: 100%;
+}
+
+/* inicio de Nav*/
+
+.menu nav {
+    background-color: rgb(56, 54, 54);
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0.3rem 0.3rem 1.5rem rgba(165, 6, 6, 0.734);
+}
+
+.logo {
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 4.5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    text-shadow: 0 .5rem .5rem rgb(235, 17, 17);
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.menu-items li {
+    border-radius: 0.7rem;
+    margin: 0 0.5rem;
+}
+
+.menu-items li a {
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.menu-items li:hover, li.active {
+    background-color: rgba(184, 9, 9, 0.755);
+    transition: .4s;
+}
+
+.btn-menu {
+    margin-right: 2rem;
+    font-size: 1.9rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 6rem;
+
+}
+
+/* fin Nav */
+
+
+/* Fotos inicio */
+
+.foto1 {
+    background-image: url(/img/Pattern-carbon-fiber.jpg);
+    min-height: 100%;
+}
+
+.foto2 {
+    background-image: url(/img/fondo-prisma.jpg);
+    min-height: 60%;
+}
+
+.foto3 {
+    background-image: url(/img/vortix.jpg);
+    min-height: 45%;
+}
+
+.foto4 {
+    background-image: url(/img/fondo-circulos.jpg);
+    min-height: 30%;
+}
+
+.foto5 {
+    background-image: url(/img/fondo-circulos.jpg);
+    min-height: 50%;
+}
+.foto6 {
+    background-image: url(/img/vortix.jpg);
+    min-height: 50%;
+}
+
+.foto7 {
+    background-image: url(/img/vortix.jpg);
+    min-height: 30%;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7 {
+    position: relative;
+    opacity: 0.93;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* Fin fotos */
+
+/* Leyends */
+
+.leyend1 {
+    color: rgb(250, 245, 245);
+    font-size: 550%;
+    top: 25%;
+    font-weight: 700;
+}
+
+.leyend2 {
+    color: rgb(245, 237, 237);
+    font-size: 350%;
+    top: 50%;
+}
+
+.leyend3{
+    color:  rgb(235, 20, 20);
+    font-size: 450%;
+    font-style: italic;
+    font-weight: 700;
+    top: 70%;
+}
+
+.leyend4 {
+    color: white;
+    font-size: 250%;
+    top: 40%;
+}
+
+.leyend5 {
+    color: white;
+    font-size: 250%;
+    top: 40%;
+}
+
+.leyend6 {
+    color: white;
+    font-size: 250%;
+    top: 35%;
+}
+
+.leyend1, .leyend2, .leyend3, .leyend4, .leyend5, .leyend6 {
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    text-shadow: 0 0 1rem rgb(241, 10, 10);
+    text-align: center;
+    line-height: 6rem;
+    margin: 1rem;
+}
+
+.dark {
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+
+/* Fin Section/Leyends */
+
+/* Footer inicio */
+
+footer {
+    background-color: rgb(29, 28, 28);
+    color: rgb(255, 255, 255);
+    display:block;
+    /* margin: 1rem; */
+    padding:1.3rem;
+}
+
+.footer-contact ul li{
+    margin: 1.2rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    text-align: center;
+}
+.footer-contact ul li a {
+    display: block;
+    padding: 0.5rem;
+    transition: all 0.4s;
+    transition-duration: 1s;
+    font-size: 1.5rem;
+    font-weight: 400;
+}    
+
+.footer-contact ul li a:hover {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    color: rgb(252, 225, 225);
+    box-shadow: 0 0 0.5rem rgb(255, 0, 0), 0 0 0.9rem rgb(255, 0, 0);
+}
+
+.nav-fab-foot {
+    color:white
+}
+
+.footer-tex {
+    margin: 3rem;
+    padding: 2rem;
+}
+
+/* Fin Footer */
+
+/* Bootstrap */
+
+.slide {
+    padding: 3rem 6rem;
+}
+
+.slide img {
+    height: 85vh;
+    align-content: center;
+}
+
+/* Mwdia Query */
+
+@media only screen and (max-width:500px){
+    .leyend1, .leyend2, .leyend3, .leyend4, .leyend5, .leyend6 {
+        position: absolute;
+        width: 100%;
+        letter-spacing: 1rem;
+        line-height: 2rem;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-contact ul {
+        width: 100%;
+    }
+    .footer-contact ul li{
+        margin: 1rem;
+        display: inline-block;
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    .footer-contact ul li a {
+        font-size: 1rem;
+        font-weight: 400;
+    } 
+    
+    .footer-text {
+        margin: 1.5rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-menu{
+        display: inline-flex;
+        margin-right: 3.5rem;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .leyend1, .leyend2, .leyend3, .leyend4, .leyend5, .leyend6 {
+        position: absolute;
+        width: 100%;
+        letter-spacing: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0 1.5rem;
+        font-size: 2rem;
+    }
+
+    .footer-contact ul {
+        width: 100%;
+    }
+    .footer-contact ul li{
+        margin: 1rem;
+        display: inline-block;
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+    .footer-contact ul li a {
+        font-size: 1.8rem;
+        font-weight: 400;
+    } 
+    
+    .footer-text {
+        margin: 2rem;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .btn-menu{
+        display: inline-flex;
+        margin-right: 3.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) and (orientation: landscape) {
+    .menu nav li {
+        margin: 0.7rem 0 0 0;
+        padding: 0.7rem 0 0 0;
+        text-align: center;
+    }
+
+    .menu-items {
+        overflow: scroll;
+        height: calc(100% - 6rem);
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .logo {
+        font-size: 2rem;
+        padding-left: 1.8rem;
+    }
+
+    .menu-items li a{
+        font-size: .9rem;
+        flex-wrap: wrap;
+    }
+}
+
